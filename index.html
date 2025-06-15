@@ -43,82 +43,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Breakbricks - Coming Soon</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
-            background: linear-gradient(to bottom, #1a202c, #2d3748);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            margin: 0;
             font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
         }
         .container {
-            text-align: center;
-            padding: 2rem;
+            padding: 20px;
             max-width: 600px;
-            margin: 0 auto;
+            animation: fadeIn 1s ease-in;
         }
-        .logo {
-            font-size: 3.5rem;
-            font-weight: bold;
-            color: #ffffff;
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 0.5em;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
-        .coming-soon {
-            font-size: 1.5rem;
-            color: #e2e8f0;
-            margin: 1.5rem 0;
-        }
-        .links {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            margin-top: 2rem;
+        p {
+            font-size: 1.5em;
+            margin-bottom: 1.5em;
         }
         .links a {
-            padding: 0.75rem 1.5rem;
-            border-radius: 0.375rem;
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #ff6f61;
+            color: #fff;
             text-decoration: none;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
+            border-radius: 5px;
+            font-size: 1.1em;
+            transition: background-color 0.3s, transform 0.2s;
         }
-        .poster-link {
-            background-color: #4a5568;
-            color: #ffffff;
+        .links a:hover {
+            background-color: #e65b50;
+            transform: scale(1.05);
         }
-        .poster-link:hover {
-            background-color: #718096;
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
-        .youtube-link {
-            background-color: #e53e3e;
-            color: #ffffff;
-        }
-        .youtube-link:hover {
-            background-color: #c53030;
-        }
-        @media (max-width: 640px) {
-            .logo {
-                font-size: 2.5rem;
-            }
-            .coming-soon {
-                font-size: 1.25rem;
-            }
-            .links {
-                flex-direction: column;
-                gap: 1rem;
-            }
+        @media (max-width: 480px) {
+            h1 { font-size: 2.5em; }
+            p { font-size: 1.2em; }
+            .links a { font-size: 1em; padding: 8px 15px; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 class="logo">Breakbricks</h1>
-        <p class="coming-soon">Coming Soon!</p>
+        <h1>Breakbricks</h1>
+        <p>Exciting things are on the way! Stay tuned for the launch of Breakbricks.</p>
         <div class="links">
-            <a href="https://your-poster-link.com" class="poster-link">View Our Poster</a>
-            <a href="https://www.youtube.com/yourchannel" class="youtube-link">Visit Our YouTube</a>
+            <a href="https://www.canva.cn/design/DAGqbB-0x48/lldGVJKFkUoLqjj9A3Xo_g/watch?utm_content=DAGqbB-0x48&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hbb85315aaf" target="_blank">Watch Our Video</a>
+            <a href="https://www.youtube.com" target="_blank">Visit Our YouTube</a>
         </div>
+        <p>Coming Soon!</p>
     </div>
 </body>
 </html>
